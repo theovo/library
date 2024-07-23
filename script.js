@@ -1,10 +1,12 @@
 let myLibrary = [];
 
-function Book(t, a, p, s) {
-    this.title = t;
-    this.author = a;
-    this.pages = p;
-    this.status = s;
+class Book {
+    constructor(t, a, p, s) {
+        this.title = t;
+        this.author = a;
+        this.pages = p;
+        this.status = s;
+    }
 }
 
 
@@ -111,4 +113,3 @@ function removeBookFromLibrary(e) {
         e.target.parentElement.remove();
     }
 }
-
