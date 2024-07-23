@@ -1,0 +1,23 @@
+/* ALTERNATE BOX MODEL */
+
+* {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: flex-start; */
+}

@@ -1,0 +1,50 @@
+<!-- HTML BOILERPLATE -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Library</title>
+    <link rel="icon" type="image/png" sizes="24x32" href="img/favicon.png">
+    <link rel="stylesheet" href="reset.css">
+    <!-- <link rel="stylesheet" href="minimal-table.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Status</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <form action="" method="post">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title">
+
+        <label for="author">Author</label>
+        <input type="text" id="author" name="author">
+
+        <label for="pages">Pages</label>
+        <input type="number" id="pages" name="pages">
+
+        <label for="unread">Unread</label>
+        <input type="radio" id="unread" name="status" value="unread" checked>
+        <label for="read">Read</label>
+        <input type="radio" id="read" name="status" value="read">
+    </form>
+    <button id="add">Add</button>
+
+</body>
+
+</html>
