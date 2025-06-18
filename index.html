@@ -1,0 +1,47 @@
+<!-- HTML BOILERPLATE -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Library</title>
+  <link rel="icon" type="image/png" sizes="24x32" href="img/favicon.png">
+  <link rel="stylesheet" href="reset.css">
+  <!-- <link rel="stylesheet" href="minimal-table.css"> -->
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <section>
+      <ul>
+        <li class="title bold uppercase">Title</li>
+        <li class="author bold uppercase">Author</li>
+        <li class="pages bold uppercase">Pages</li>
+        <li class="status bold uppercase">Status</li>
+      </ul>
+    </section>
+
+    <form action="" method="post">
+      <label for="title" class="title bold uppercase visually-hidden">Title</label>
+      <input type="text" id="title" class="title" name="title">
+
+      <label for="author" class="author bold uppercase visually-hidden">Author</label>
+      <input type="text" id="author" class="author" name="author">
+
+      <label for="pages" class="pages bold uppercase visually-hidden">Pages</label>
+      <input type="number" id="pages" class="pages" name="pages">
+
+      <label for="status" class="status bold uppercase visually-hidden">Status</label>
+      <input type="button" id="status" class="status border" name="status" value="Unread">
+
+      <button class="add">+</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

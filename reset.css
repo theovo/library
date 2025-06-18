@@ -1,0 +1,91 @@
+/* THEO'S RULES */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  border: none;
+  /* border: 1px solid rgba(0, 0, 0, 0.15); */
+  vertical-align: middle;
+
+  box-sizing: border-box;
+  /* alternate box model */
+
+  font: inherit;
+  font-size: 1.6rem;
+  color: inherit;
+  background: none;
+}
+
+html {
+  /* set base font size to 10px */
+  font-size: 62.5%;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: rgba(0, 0, 0, 0.4);
+}
+
+body {
+  height: 100vh;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+label {
+  border: 0;
+}
+
+/* MEYER'S RULES */
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* HTML5 DISPLAY-ROLE RESET FOR OLDER BROWSERS */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

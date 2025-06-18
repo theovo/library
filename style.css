@@ -1,0 +1,91 @@
+body {
+  margin: auto;
+  max-width: 960px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+
+  background-color: #3C3C3C;
+  color: white;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr max-content max-content max-content max-content;
+  gap: 16px;
+  /* background-color: white; */
+}
+
+section,
+ul,
+form {
+  /* line elements to the grid by using these rules */
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+  gap: 16px;
+}
+
+form {
+  /* form has two rows */
+  /* first row is for labels, second row is for input elements */
+  grid-template-rows: 1fr 1fr;
+  /* background-color: lightsteelblue; */
+}
+
+label {
+  /* specify all labels belong in first row
+  otherwise, labels and inputs appear cascaded in the grid*/
+  grid-row: 1;
+}
+
+.title {
+  grid-column: 1;
+  /* background-color: lightblue; */
+}
+
+.author {
+  grid-column: 2;
+  /* background-color: red; */
+}
+
+.pages {
+  grid-column: 3;
+  /* background-color: lightpink; */
+}
+
+.status {
+  grid-column: 4;
+}
+
+button {
+  grid-column: 5;
+  /* background-color: lightgreen; */
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.border {
+  border: 1px solid white;
+  padding-bottom: 1px;
+  text-align: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+.visually-hidden {
+  /* keep labels visually hidden to declutter the ui */
+  position: absolute;
+  left: -9999px;
+}
